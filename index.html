@@ -3,143 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="left">
-                <h1>My Portfolio</h1>
-            </div>
-            <div class="right">
-                <nav>
-                    <a href="#about">About Me</a>
-                    <a href="#education">Education</a>
-                    <a href="#skills-audio">Skills</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </div>
+    <header class="header">
+        <a href="#" class="logo">My Portfolio</a>
+        <nav class="navbar">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+        </nav>
+        <a href="#contact" class="contact">Contact Me</a>
     </header>
 
-    <div class="quote-section">
-        <h2>"Write your own script, and create your own ending."</h2>
-    </div>
-
-    <div class="container about-section" id="about">
-        <div class="about-left">
-            <img src="me.JPG" alt="My Photo" width="300" height="300">
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Bonjour!</h1>
+            <h2>I'm <span><i>Faris Farhan</i></span>, a Cyber Security Enthusiast.</h2>
+            <p class="quote">"Write your own script, create your own ending"</p>
         </div>
-        <div class="about-right">
-            <h2>About Me</h2>
-            <p>Hello! I'm <b>Faris Farhan</b>, a 3rd-year undergraduate student majoring in Computer Science at Pertamina University. I have a passion for cybersecurity and am particularly focused on ethical hacking and pentesting. My goal in life is to pursue a career that ensures the safety and protection of digital spaces around me.</p>
-            <p><a href="https://www.linkedin.com/in/faris-farhan-54b9b1287/" target="_blank">LinkedIn Profile</a></p>
+        <div class="img-box">
+            <img src="me.JPG" alt="">
         </div>
-    </div>
+    </section>
 
-    <div class="container" id="education">
-        <h2>Education</h2>
-        <table class="education-table">
-            <tr>
-                <th>Degree</th>
-                <th>Institution</th>
-                <th>Year</th>
-            </tr>
-            <tr>
-                <td>Bachelor of Computer Science</td>
-                <td>Pertamina University</td>
-                <td>2021 - Present</td>
-            </tr>
-            <tr>
-                <td>High School</td>
-                <td>Institute of Religious Studies for Boys - Qatar</td>
-                <td>2017 - 2022</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="container" id="skills-audio">
-        <div class="skills-section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Basic Linux</li>
-                <li>Python Programming</li>
-                <li>HTML & CSS</li>
-                <li>Cybersecurity Fundamentals</li>
-            </ul>
+    <section id="about" class="about">
+        <div class="about-img">
+            <img src="me2.jpg" alt="">
         </div>
 
-        <div class="audio-section">
-            <h2>Check out My Personal Favourite!</h2>
-            <div>
-                <audio controls>
-                    <source src="Iwatodai Dorm.mp3" type="audio/mpeg">
-                </audio>
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <p>Currently a 3rd-year undergraduate student majoring in Computer Science at Pertamina University. I have a passion for cybersecurity and am particularly focused on ethical hacking and pentesting. My goal in life is to pursue a career that ensures the safety and protection of digital spaces around me.</p>
+
+            <div class="grid-container">
+                <div>
+                    <h2 class="heading">Education</h2>
+                    <p id="education">Bachelor of Computer Science<br>Pertamina University (2021 - Present)</p>
+                    <p>High School<br>Institute of Religious Studies for Boys - Qatar (2017 - 2022)</p>
+                </div>
+
+                <div>
+                    <h2 class="heading">Skills</h2>
+                    <p id="skills">Basic Linux, Python Programming, HTML & CSS, Cybersecurity Fundamentals, Java, C++</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="video-section">
-        <h2>Some Lo-fi Beats</h2>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/HQwLPhE2zys?si=OtzmThB3KcAP1ioQ" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="contact-section" id="contact">
-        <h2>Reach Out to Me!</h2>
-        <form action="form" method="POST">
-            <table class="contact-form">
-                <tr>
-                    <td><label for="name">Name:</label></td>
-                    <td><input type="text" id="name" name="name" required></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Email:</label></td>
-                    <td><input type="email" id="email" name="email" required></td>
-                </tr>
-                <tr>
-                    <td><label for="gender">Gender:</label></td>
-                    <td>
-                        <div class="gender-options">
-                            <input type="radio" id="male" name="gender" value="Male">
-                            <label for="male">Male</label>
-                            <input type="radio" id="female" name="gender" value="Female">
-                            <label for="female">Female</label>
-                            <input type="radio" id="unknown" name="gender" value="unknown">
-                            <label for="unknown">Rather not Say</label>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="interest">Interests:</label></td>
-                    <td>
-                        <div class="interest-options">
-                            <input type="checkbox" id="software" name="interest" value="Software">
-                            <label for="software">Software</label>
-                            <input type="checkbox" id="iot" name="interest" value="IOT">
-                            <label for="iot">IOT</label>
-                            <input type="checkbox" id="networking" name="interest" value="Networking">
-                            <label for="network">Networking</label>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="message">Message:</label></td>
-                    <td><textarea id="message" name="message" placeholder="WRITE HERE."></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" value="Submit">
-                    </td>
-                </tr>
-            </table>
+    <section id="contact" class="contact-form">
+        <h2 class="contact-me">Contact Me</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Write Your Message Here"></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
         </form>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 by Faris Farhan.</p>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/far1s.frhn?igsh=MXdnb2d6amRvd3o3dQ==" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/faris-farhan-54b9b1287/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <p class="copyright">@ 2024 Faris Farhan | All Rights Reserved</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="font-poppins text-base">
+    <header class="fixed top-0 left-0 w-full p-6 bg-black flex justify-between items-center z-10">
+        <a href="#" class="text-2xl text-[#ecc19c] font-semibold">My Portfolio</a>
+        <nav class="flex space-x-8">
+            <a href="#about" class="text-[#ecc19c] font-medium hover:text-white">About Me</a>
+            <a href="#education" class="text-[#ecc19c] font-medium hover:text-white">Education</a>
+            <a href="#skills" class="text-[#ecc19c] font-medium hover:text-white">Skills</a>
+        </nav>
+        <a href="#contact" class="px-4 py-2 bg-[#ecc19c] text-black rounded-md text-lg">Contact Me</a>
+    </header>
+
+    <section id="home" class="flex items-center gap-28 min-h-screen bg-[#ecc19c] p-8">
+        <div>
+            <h1 class="text-6xl leading-tight">Bonjour!</h1>
+            <h2 class="text-4xl">I'm <span class="font-bold">Faris Farhan</span>, a Cyber Security Enthusiast.</h2>
+            <p class="mt-2 text-lg italic text-gray-700">"Write your own script, create your own ending"</p>
+        </div>
+        <div>
+            <img src="me.JPG" alt="" class="rounded-full w-[450px]">
+        </div>
+    </section>
+
+    <section id="about" class="flex justify-between items-center p-12 bg-black gap-20">
+        <div>
+            <img src="me2.jpg" alt="" class="rounded-full w-[1000px] h-[600px] shadow-2xl">
+        </div>
+        <div class="text-[#ecc19c]">
+            <h2 class="text-4xl">About Me</h2>
+            <p class="my-8">Currently I'm a 3rd-year undergraduate student majoring in Computer Science at Pertamina University. I have a passion for cybersecurity and am particularly focused on ethical hacking and pentesting. My goal in life is to pursue a career that ensures the safety and protection of digital spaces around me.</p>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h2 class="text-4xl">Education</h2>
+                    <p id="education">Bachelor of Computer Science<br>Pertamina University (2021 - Present)</p>
+                    <p>High School<br>Institute of Religious Studies for Boys - Qatar (2017 - 2022)</p>
+                </div>
+    
+                <div>
+                    <h2 class="text-4xl">Skills</h2>
+                    <p id="skills">Basic Linux, Python Programming, HTML & CSS, Cybersecurity Fundamentals, Java, C++</p>
+                </div>
+            </div>
+        </div>
+    </section>        
+
+    <section id="contact" class="py-10">
+        <h2 class="text-center text-3xl mt-12 mb-4">Contact Me</h2>
+        <form action="#" class="max-w-2xl mx-auto text-center mb-12">
+            <div class="flex flex-wrap justify-center">
+                <input type="text" placeholder="Name" class="w-full p-4 mb-4 text-lg bg-[#ecc19c] rounded-lg">
+                <input type="email" placeholder="Email" class="w-full p-4 mb-4 text-lg bg-[#ecc19c] rounded-lg">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Write Your Message Here" class="w-full p-4 mb-4 text-lg bg-[#ecc19c] rounded-lg"></textarea>
+            <input type="submit" value="Send Message" class="px-6 py-3 bg-black text-[#ecc19c] border-2 border-current rounded-lg text-lg font-semibold hover:bg-[#ecc19c] hover:text-white">
+        </form>
+    </section>
+
+    <footer class="py-10 bg-black">
+        <div class="text-center pb-6">
+            <a href="https://www.instagram.com/far1s.frhn?igsh=MXdnb2d6amRvd3o3dQ==" target="_blank" class="text-white text-2xl mx-2 border border-[#ecc19c] rounded-full px-2 py-2 inline-flex items-center justify-center"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/faris-farhan-54b9b1287/" target="_blank" class="text-white text-2xl mx-2 border border-[#ecc19c] rounded-full px-2 py-2 inline-flex items-center justify-center"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <p class="text-center text-xs text-[#ecc19c]">@ 2024 Faris Farhan | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
